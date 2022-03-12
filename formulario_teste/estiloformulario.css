@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    padding: 30px;
+    background-color: #d0eee4;
+}
+
+p {
+    font: normal 15pt Arial;
+    text-align: justify;
+}
+
+input {
+    margin: 10px;
+}
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
