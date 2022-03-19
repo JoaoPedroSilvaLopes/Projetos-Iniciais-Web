@@ -12,7 +12,7 @@ section {
     background-color: white;
     border-radius: 15px;
     padding: 15px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
@@ -24,9 +24,34 @@ footer {
 }
 
 div#resultado {
-    align-items: center;
+    text-align: center;
 }
 
 img {
     margin: 20px;
+}
+
+input#botao {
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+div#resultado {
+    margin-top: 20px;
+    align-content: center;
+}
+
+input#textoano {
+    border-radius: 5px;
+    border-color: #A9A9A9;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }

@@ -8,27 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>VERIFIQUE SUA IDADE</h1>
-    </header>
+    <header><h1>VERIFIQUE SUA IDADE</h1></header>
     <section>
         <div id="entrada">
-            <p>Ano de nascimento: 
+            <p id="entrada_dados">Ano de nascimento: 
                 <input type="number" name="textoano" id="textoano" min="0">
             </p>
-            <p>
+            <p id="entrada_radio">
                 <input type="radio" name="radsex" id="male" checked>
                 <label for="male">Masculino</label>
                 <input type="radio" name="radsex" id="female" checked>
                 <label for="female">Feminino</label>
             </p>
-            <p>
-                <input type="button" value="Verificar valores" onclick="verificar()">
-            </p>
+            <p><input type="button" id="botao" value="VERIFICAR" onclick="verificar()"></p>
         </div>
-        <div id="resultado">
-            Insira os dados acima para receber um resultado compatível.
-        </div>
+        <div id="resultado">Insira os dados acima para receber um resultado compatível.</div>
     </section>
     <footer>
         <p>&copy; João Pedro</p>
