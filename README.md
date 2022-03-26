@@ -1,2 +1,2 @@
 # projeto_pokemon
-Aplicação em Flutter que busca simular batalhas pokémon nos moldes do pokémon Fire Red
+Aplicação em JavaScript que busca simular interfaces do jogo pokémon e suas peculiaridades
