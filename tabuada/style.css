@@ -1,0 +1,66 @@
+body {
+    background-color: #5ed8f7;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div#entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#resultado {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+button#botao_tabuada {
+    height: 50px;
+    width: 150px;
+    border-color: #A9A9A9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+input {
+    border-radius: 2px;
+    border-color: #A9A9A9;
+}
+
+select#lista {
+    width: 200px;
+    border-radius: 2px;
+    border-color: #A9A9A9;
+    text-align: center;
+}
