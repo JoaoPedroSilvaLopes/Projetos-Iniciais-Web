@@ -1,0 +1,43 @@
+body {
+    background-color: #5ed8f7;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+button#botao_contar {
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+div#resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
