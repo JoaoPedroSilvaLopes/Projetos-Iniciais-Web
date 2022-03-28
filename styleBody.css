@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'pokemon';
+    src: url('font/Pokemon Classic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+    /*animation-duration: 0.25s;
+    animation-name: piscar;*/
+}
+
+@keyframes mover {
+    0% {
+        transform: translatey(5px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(5px);
+    }
+}
+
+body {
+    background-color: #73CBF8;
+}
+
+.cabecalho {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.imagens {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    width: 60%;
+    height: auto;
+    margin-bottom: 5%;
+
+    background: #F8F8F8;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.caixadialogo {
+    display: flex;
+    margin: auto;
+
+    background: #F8F8F8;
+    border: 15px solid #A0D0E0;
+    border-radius: 75px;
+    outline: 10px solid #4870A0;
+
+    width: 60%;
+    height: 150px;
+    margin-bottom: 2%;
+    padding: 30px;
+
+    font-family: 'pokemon';
+    font-size: 20px;
+    color: #3050C8;
+    text-align: justify;
+}
+
+.rodape {
+    font-family: 'pokemon';
+    color: #3050c8;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.pokebola {
+    animation: mover 3s ease-in-out infinite;
+    animation-direction: alternate;
+}
