@@ -1,0 +1,48 @@
+html, body { height: 100%}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #606878;
+    height: 100%;
+}
+
+.cabecalho {
+    margin: auto;
+    background: #E0D898;
+    width: 60%;
+    height: 10%;
+}
+
+.main {
+    margin: auto;
+    border: 10px solid #F8E8D0;
+
+    width: 60%;
+    height: 80%;
+    
+    background: repeating-linear-gradient(
+        180deg,
+        #F8A890,
+        #F8A890 1%,
+        #F8D0A8 1%,
+        #F8D0A8 2%
+    );
+}
+
+.conteudo {
+    border-style: solid;
+    border-color: #F8E8D0;
+    border-width: 0 10px 10px 0;
+
+    position: relative;
+    float: left;
+    clear: none;
+    left: -10px;
+    top: -10px;
+    width: 60%;
+    height: 70%;
+
+    background-color: #C8A8E8;
+}
