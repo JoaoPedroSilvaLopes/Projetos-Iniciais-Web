@@ -1,4 +1,4 @@
-import { Pokedex } from "./dadosPokemon";
+//import { Pokedex } from "./dadosPokemon";
 
 /*
 Classe para gerar dados específicos e mutáveis das espécies 
@@ -17,7 +17,7 @@ class GerarPokemon {
 
         let dadosPokemon = Pokedex.find(function(dadosPokemon) {return idPokedex == Pokedex.numeroPokedex})
 
-        console.log(
+        /*console.log(
             `Nº Pokedex: ${dadosPokemon.numeroPokedex}
             Espécie: ${dadosPokemon.especie}
             Tipo: [${dadosPokemon.tipo[0]}][${dadosPokemon.tipo[1]}]
@@ -29,7 +29,7 @@ class GerarPokemon {
             Nature: ${nature}
             IVS: ${ivs}
             `
-        )
+        )*/
     }
 
     gerarIVS() {
