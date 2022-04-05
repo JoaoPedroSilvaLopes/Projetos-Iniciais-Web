@@ -12,6 +12,7 @@ descrição da pokedex.
 
 class DadosPokedex {
 
+	// Construtor
 	constructor(especie, tipo, statsBase, descricao) {
 		this.numeroPokedex = ('000' + pokedex.length).slice(-3)
 		this.especie = especie
@@ -22,6 +23,7 @@ class DadosPokedex {
 		this.VF = this.gerarVantagensEDesvantagens(tipo)
 	}
 
+	// Função referente à gerar as fraquezas, resistencias e imunidades genéricas de um pokémon
 	gerarVantagensEDesvantagens(tipo) {
 		const tipoPrimario = tipo[0]
 		const tipoSecundario = tipo[1]
@@ -80,7 +82,7 @@ const pokedex = []
 
 pokedex[0] = new DadosPokedex('Missigno', ['Normal'], [10, 10, 10, 10, 10, 10],
 `
-???
+???n
 `
 )
 
@@ -1222,7 +1224,4 @@ deste Pokémon mítico podem ser vistos.
 `
 )
 
-/*console.log(pokedex[1])
-console.log(pokedex[2])*/
-
-export { pokedex }
+export default pokedex

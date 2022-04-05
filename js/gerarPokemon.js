@@ -1,11 +1,9 @@
-import { pokedex } from './dadosPokemon.mjs';
+import pokedex from './dadosPokemon.js'
 
 /*
 Classe para gerar dados específicos e mutáveis das espécies 
 dos pokémons como: nome, IVS, natures, nivel e experiencia.
-*/
-
-/*
+===================================================================
 HP:
 - Deve ser verde quando: HP-ATUAL > HP/2
 - Deve ser amarelo quando: HP/5 <= HP-ATUAL <= HP/2
@@ -18,13 +16,15 @@ Formula de calcular os demais status
 - ((((2 x HP-BASE + IV + (EV/4)) x Nivel) / 100) + 5) x Nature
 */
 
-class GerarPokemon {
+export default class GerarPokemon {
 
+	// construtor
 	constructor(idPokedex, nome, nivel, experiencia) {
 		let dadosPokemon = this.verificar(idPokedex)
 		const ivs = this.gerarIVS()
 		const nature = this.gerarNature()
 		const sexo = this.gerarSexoPokemon()
+		const sprite = this.gerarSprite(dadosPokemon.sprites)
 		let stats = this.gerarStats(dadosPokemon.statsBase, ivs, nature, nivel)
 
 		this.idPokedex = idPokedex
@@ -35,10 +35,18 @@ class GerarPokemon {
 		this.nature = nature[0]
 		this.stats = stats
 		this.dadosPokemon = dadosPokemon
-
-		console.log(ivs)
+		this.sprite = sprite
 	}
 
+	// Função referente à escolha do sprite para determinar se o pokémon será shiny ou não
+	gerarSprite(sprites) {
+    	let randomizador = Math.floor(Math.random() * 10)
+		let sprite
+    	randomizador > 5 ? sprite = sprites[0] : sprite = sprites[1]
+		return sprite
+	}
+
+	// Função referente à encontrar os dados genéricos de tal pokémon
 	verificar(idPokedex) {
 		for (let i = 0; i <= pokedex.length; i++) {
 			if (idPokedex == pokedex[i].numeroPokedex) {
@@ -47,11 +55,13 @@ class GerarPokemon {
 		}
 	}
 
+	// Função referente à gerar o sexo do pokémon (requer melhorias)
 	gerarSexoPokemon() {
 		const randomizador = Math.random() * 10
 		return randomizador > 5 ? "Macho" : "Fêmea"
 	}
 
+	// Função referente à gerar os ivs do pokémon de forma aleatória
   	gerarIVS() {
       	const ivs = [Math.floor(Math.random() * 32), Math.floor(Math.random() * 32), Math.floor(Math.random() * 32), 
                   	Math.floor(Math.random() * 32), Math.floor(Math.random() * 32), Math.floor(Math.random() * 32)]
@@ -59,6 +69,7 @@ class GerarPokemon {
     	return ivs
   	}
 
+	// Função referente à gerar a nature do pokémon de forma aleatória
 	gerarNature() {
 		const vetorNatures = 
 		[
@@ -76,6 +87,7 @@ class GerarPokemon {
 		return [nature, i + 1, j + 1]
 	}
 
+	// Função referente à gerar os stats unicos do pokemon com base nos ivs e nature
 	gerarStats(statsBase, ivs, nature, nivel) {
 		var stats = new Array(6)
 		stats[0] = Math.floor(Math.abs(((2 * statsBase[0] + ivs[0] + Math.floor(Math.abs(0 / 4))) * nivel) / 100)) + nivel + 10
@@ -109,27 +121,4 @@ class GerarPokemon {
 	curar() {}
 
 	subirNivel() {}*/
-}
-
-/*let teste1 = new GerarPokemon('001', 'bulbamon', 5, 0)
-let teste4 = new GerarPokemon('004', 'charmanda', 5, 0)
-let teste7 = new GerarPokemon('007', 'squirtu', 5, 0)
-
-let teste94 = new GerarPokemon('007', 'squirtu', 5, 0)*/
-
-/*console.table(teste1)
-console.table(teste4)
-console.table(teste7)*/
-
-/*console.table(teste1.dadosPokemon.descricao)
-console.table(teste4.dadosPokemon.descricao)
-console.table(teste7.dadosPokemon.descricao)*/
-
-let teste94 = new GerarPokemon('094', 'Quengar', 50, 0)
-
-console.table(teste94)
-
-
-function gerarPagina() {
-	paragrafoteste.innerHTML = `${teste1.dadosPokemon.descricao}`
 }
