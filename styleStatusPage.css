@@ -53,6 +53,14 @@ body {
     background-color: #C8A8E8;
 }
 
+.paragrafoteste {
+    text-align: justify;
+    font-family: 'pokemon';
+    color: #F8F8F8;
+    text-shadow: 2px 2px #686868;
+    font-size: 100%;
+}
+
 @font-face {
     font-family: 'pokemon';
     src: url('font/Pokemon Classic.ttf') format('truetype');
