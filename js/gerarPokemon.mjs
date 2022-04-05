@@ -35,6 +35,8 @@ class GerarPokemon {
 		this.nature = nature[0]
 		this.stats = stats
 		this.dadosPokemon = dadosPokemon
+
+		console.log(ivs)
 	}
 
 	verificar(idPokedex) {
@@ -109,15 +111,24 @@ class GerarPokemon {
 	subirNivel() {}*/
 }
 
-let teste1 = new GerarPokemon('001', 'bulbamon', 5, 0)
+/*let teste1 = new GerarPokemon('001', 'bulbamon', 5, 0)
 let teste4 = new GerarPokemon('004', 'charmanda', 5, 0)
 let teste7 = new GerarPokemon('007', 'squirtu', 5, 0)
 
+let teste94 = new GerarPokemon('007', 'squirtu', 5, 0)*/
+
 /*console.table(teste1)
-console.table(teste4)n
+console.table(teste4)
 console.table(teste7)*/
 
-console.table(teste1.dadosPokemon.descricao)
+/*console.table(teste1.dadosPokemon.descricao)
+console.table(teste4.dadosPokemon.descricao)
+console.table(teste7.dadosPokemon.descricao)*/
+
+let teste94 = new GerarPokemon('094', 'Quengar', 50, 0)
+
+console.table(teste94)
+
 
 function gerarPagina() {
 	paragrafoteste.innerHTML = `${teste1.dadosPokemon.descricao}`
