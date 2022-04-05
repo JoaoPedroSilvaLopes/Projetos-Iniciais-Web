@@ -10,10 +10,13 @@
 <body>
     <header id="cabecalho" class="cabecalho">POKÉMON INFO</header>
     <div id="main" class="main">
-        <div class="conteudo"></div>
-        <button type="button" onclick="gerarPagina()">CLICAR</button>
-        <p id="paragrafoteste">teste</p>
+        <div class="conteudo" id="conteudo"></div>
+        <button onclick="gerarPagina()">CLICAR</button>
+        <p class="paragrafoteste" id="paragrafoteste">teste</p>
     </div>
-    <script type="module" src="js/gerarPokemon.mjs"></script>
+    <script type="module"> 
+        import gerarPagina from "./js/script.js"
+        gerarPagina()
+    </script>
 </body>
 </html>

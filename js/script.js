@@ -1,10 +1,12 @@
-var tecla
+import GerarPokemon from "./gerarPokemon.js"
+
+let tecla
 
 function escolher(ID) {
 
     limpar()
 
-    var imagem = document.createElement('img')
+    let imagem = document.createElement('img')
     imagem.style.width = '25%';
     imagem.style.height = 'auto';
 
@@ -43,16 +45,17 @@ function limpar() {
 
 function gerarPokemon(numeroPokemon) {
 
-    var codigo = ('000' + numeroPokemon).slice(-3)
-    var randomizador = Math.random() * 10
+    let codigo = ('000' + numeroPokemon).slice(-3)
+    let randomizador = Math.random() * 10
     randomizador > 5 ? codigo = codigo : codigo = String(codigo) + 'S'
+    console.log(randomizador)
 
     return codigo
 }
 
 function pressionarTecla(event) {
 
-    var tecla = event.key
+    let tecla = event.key
 
     if (tecla == 'y') {
         window.alert("escolhido")
@@ -62,4 +65,16 @@ function pressionarTecla(event) {
         window.alert("nao escolhido")
         return 'n'
     }
+}
+
+export default function gerarPagina() {
+    let teste94 = new GerarPokemon('151', 'Quengar', 50, 0)
+	paragrafoteste.innerHTML = `${teste94.dadosPokemon.descricao}`
+
+    let imagem = document.createElement('img')
+    imagem.style.width = '90%';
+    imagem.style.height = 'auto';
+
+    imagem.setAttribute('src', `${teste94.sprite}`)
+    conteudo.appendChild(imagem)
 }
