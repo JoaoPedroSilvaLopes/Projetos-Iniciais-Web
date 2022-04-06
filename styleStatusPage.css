@@ -11,23 +11,72 @@ body {
 .cabecalho {
     margin: auto;
     background: #E0D898;
-    width: 60%;
-    height: 10%;
+    width: 80%;
+    height: 5%;
 
     font-family: 'pokemon';
     color: #F8F8F8;
-    text-shadow: 2px 2px #686868;
+    text-shadow: 0.3vw 0.3vw #686868;
+    font-size: 2vw;
+    text-align: left;
+}
 
+.cabecalhointerno {
+    padding: 1vw;
+    font-family: 'pokemon';
+    color: #F8F8F8;
+    text-shadow: 0.3vw 0.3vw #686868;
+    font-size: 2vw;
     text-align: left;
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    border: 10px solid #F8E8D0;
-
-    width: 60%;
+    width: 80%;
     height: 80%;
-    
+}
+
+.secaoprimaria {
+    display: flex;
+    flex-direction: row;
+}
+
+.secaosecundaria {
+    display: flex;
+    flex-direction: row;
+}
+
+.fotopokemon {
+    width: 60%;
+    height: auto;
+    background-color: #C8A8E8;
+
+    border: solid #606878;
+    border-width: 0 0.7vw 0.7vw 0;
+    box-sizing: border-box;
+}
+
+.fotopokemoninterna {
+    margin: 0.7vw;
+    border: solid #B088D0;
+    border-width: 0.4vw 0.4vw 0.4vw 0.4vw;
+    box-sizing: border-box;
+
+    background: repeating-linear-gradient(
+        180deg,
+        #F8F8F8,
+        #F8F8F8 1%,
+        #E8E8E8 1%,
+        #E8E8E8 3.5%
+    );
+}
+
+.descricaopokedex {
+    width: 40%;
+    height: auto;
+
     background: repeating-linear-gradient(
         180deg,
         #F8A890,
@@ -35,30 +84,71 @@ body {
         #F8D0A8 1%,
         #F8D0A8 2%
     );
+
+    border: solid #F8E8D0;
+    border-width: 0.7vw 0.7vw 0 0.7vw;
+    box-sizing: border-box;
 }
 
-.conteudo {
-    border-style: solid;
-    border-color: #F8E8D0;
-    border-width: 0 10px 10px 0;
-
-    position: relative;
-    float: left;
-    clear: none;
-    left: -10px;
-    top: -10px;
+.statspokemon {
     width: 60%;
-    height: 70%;
+    height: auto;
+    background: repeating-linear-gradient(
+        180deg,
+        #F8A890,
+        #F8A890 1%,
+        #F8D0A8 1%,
+        #F8D0A8 2%
+    );
 
-    background-color: #C8A8E8;
+    border: solid #F8E8D0;
+    border-width: 0.7vw 0 0.7vw 0.7vw;
+    box-sizing: border-box;
 }
 
-.paragrafoteste {
+.dadospokemon {
+    width: 40%;
+    height: auto;
+
+    background: repeating-linear-gradient(
+        180deg,
+        #F8A890,
+        #F8A890 1%,
+        #F8D0A8 1%,
+        #F8D0A8 2%
+    );
+
+    border: solid #F8E8D0;
+    border-width: 0 0.7vw 0.7vw 0;
+    box-sizing: border-box;
+}
+
+.paragrafodescricao{
+    padding: 2vw;
+
     text-align: justify;
     font-family: 'pokemon';
     color: #F8F8F8;
-    text-shadow: 2px 2px #686868;
-    font-size: 100%;
+    text-shadow: 0.3vw 0.3vw #686868;
+    font-size: 2vw;
+}
+
+.paragrafostats {
+    padding: 2vw;
+    text-align: justify;
+    font-family: 'pokemon';
+    color: #F8F8F8;
+    text-shadow: 0.3vw 0.3vw #686868;
+    font-size: 2vw;
+}
+
+.paragrafodados {
+    padding: 2vw;
+    text-align: justify;
+    font-family: 'pokemon';
+    color: #F8F8F8;
+    text-shadow: 0.3vw 0.3vw #686868;
+    font-size: 2vw;
 }
 
 @font-face {
