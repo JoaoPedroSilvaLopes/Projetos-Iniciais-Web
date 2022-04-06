@@ -68,13 +68,32 @@ function pressionarTecla(event) {
 }
 
 export default function gerarPagina() {
-    let teste94 = new GerarPokemon('151', 'Quengar', 50, 0)
-	paragrafoteste.innerHTML = `${teste94.dadosPokemon.descricao}`
+    let teste94 = new GerarPokemon('148', 'bulbao', 50, 0)
 
+	paragrafodescricao.innerHTML = `${teste94.dadosPokemon.descricao}`
+    cabecalhointerno.innerHTML = `Lv${teste94.nivel} - ${teste94.dadosPokemon.especie}`
+    paragrafodados.innerHTML = 
+    `
+    Nº POKÉDEX: ${teste94.dadosPokemon.numeroPokedex}
+    NOME DO POKÉMON: ${teste94.nome}
+    ESPÉCIE: ${teste94.dadosPokemon.especie}
+    NATURE: ${teste94.nature}
+    `
+    paragrafostats.innerHTML = 
+    `
+    HP: ${teste94.stats[0]}
+    ATK: ${teste94.stats[1]}
+    DEF: ${teste94.stats[2]}
+    SATK: ${teste94.stats[3]}
+    SDEF: ${teste94.stats[4]}
+    SPD: ${teste94.stats[5]}
+    `
+
+    
     let imagem = document.createElement('img')
     imagem.style.width = '90%';
     imagem.style.height = 'auto';
 
     imagem.setAttribute('src', `${teste94.sprite}`)
-    conteudo.appendChild(imagem)
+    fotopokemoninterna.appendChild(imagem)
 }
