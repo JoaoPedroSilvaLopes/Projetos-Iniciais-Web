@@ -10,9 +10,23 @@
 <body>
     <header id="cabecalho" class="cabecalho">POKÉMON INFO</header>
     <div id="main" class="main">
-        <div class="conteudo" id="conteudo"></div>
-        <button onclick="gerarPagina()">CLICAR</button>
-        <p class="paragrafoteste" id="paragrafoteste">teste</p>
+        <section class="secaoprimaria">
+            <div class="fotopokemon" id="fotopokemon">
+                <header class="cabecalhointerno" id="cabecalhointerno"></header>
+                <div class="fotopokemoninterna" id="fotopokemoninterna"></div>
+            </div>
+            <div class="descricaopokedex" id="descricaopokedex">
+                <p class="paragrafodescricao" id="paragrafodescricao">teste</p>
+            </div>
+        </section>
+        <section class="secaosecundaria">
+            <div class="statspokemon" id="statspokemon">
+                <p class="paragrafostats" id="paragrafostats"></p>
+            </div>
+            <div class="dadospokemon" id="dadospokemon">
+                <p class="paragrafodados" id="paragrafodados"></p>
+            </div>
+        </section>
     </div>
     <script type="module"> 
         import gerarPagina from "./js/script.js"
