@@ -1,99 +1,88 @@
-import GerarPokemon from "./gerarPokemon.js"
+import pokedex from './dadosPokemon.js'
 
-let tecla
+pokedex.shift()
 
-function escolher(ID) {
+export default function main() {
+    let pokemons = pokedex
+    const paginaPokedex = document.getElementById("main")
 
-    limpar()
-
-    let imagem = document.createElement('img')
-    imagem.style.width = '25%';
-    imagem.style.height = 'auto';
-
-    if (ID == 1) {
-        imagens.style.background = '#A9E884'
-        imagem.setAttribute('src', `pictures/${gerarPokemon(1)}.png`)
-    }
-    else if (ID == 2) {
-        imagens.style.background = '#f09537'
-        imagem.setAttribute('src', `pictures/${gerarPokemon(4)}.png`)
-    }
-    else if (ID == 3) {
-        imagens.style.background = '#4DB1E3'
-        imagem.setAttribute('src', `pictures/${gerarPokemon(7)}.png`)
-    }
-    else {
-        imagem.setAttribute('src', `pictures/${gerarPokemon(25)}.png`)
+    const handleLeftClick = (e) => {
+        e.preventDefault()
+        paginaPokedex.current.scrollLeft -= paginaPokedex.current.offsetWidth
     }
 
-    imagens.appendChild(imagem)
-    caixadialogo.innerHTML = "Deseja escolher esse pokémon? (Y/N)"
-    document.addEventListener("keydown", pressionarTecla)
-
-    if (pressionarTecla == 'y') {
-        window.alert('escolheu o pokemon')
+    const handleRightClick = (e) => {
+        e.preventDefault()
+        paginaPokedex.current.scrollLeft += paginaPokedex.current.offsetWidth
     }
 
-    else if (pressionarTecla == 'n') {
-        window.alert('nao escolheu o pokemon')
-    }
+    pokemons.forEach(element => {
+        let corpoPokedex1 = gerarPagina(element)
+        paginaPokedex.innerHTML += corpoPokedex1
+    });
 }
 
-function limpar() {
-    imagens.innerHTML = ""
+function gerarPagina( {numeroPokedex, especie, simbolos, sprites, tipo, descricao} ) {
+
+    return `<div class='paginaPokedex' key=${numeroPokedex}>
+        <div class='fotopokemon' id='fotopokemon' style="background-color: ${gerarCores(tipo[0])}">
+            <header class='cabecalhointerno' id='cabecalhointerno'>
+                <p class="titulopokemon">#${numeroPokedex}</p>
+                <p class="subtitulopokemon"><strong>${especie}</strong></p>
+                <img src=${simbolos[0]} width='10%' height='auto'></img>
+                <img src=${simbolos[1]} width='10%' height='auto'></img>
+            </header>
+            <img src=${sprites[0]} width='50%' height='auto'/>
+        </div>
+        <div class='conteudo' id='conteudo'>
+            <div class='botoesnavegacao'>
+                <button class="botaonavegacao" onClick="">Sobre</button>
+                <button class="botaonavegacao" onClick="">Stats</button>
+                <button class="botaonavegacao" onClick="">Evolução</button>
+            </div>
+            <div class='divtipos'>
+                <div class='textotipos' style="background-color: ${gerarCores(tipo[0])}">
+                    <img src=${simbolos[0]} width='15%' height='auto'></img>
+                    <strong>${gerarStringTipo(tipo[0])}</strong>
+                </div>
+                <div class='textotipos' style="background-color: ${gerarCores(tipo[1])}">
+                    <img src=${simbolos[1]} width='15%' height='auto'></img>
+                    <strong>${gerarStringTipo(tipo[1])}</strong>
+                </div>
+            </div>
+            ${paginaSobre(descricao)}
+        </div>
+    </div>`
 }
 
-function gerarPokemon(numeroPokemon) {
-
-    let codigo = ('000' + numeroPokemon).slice(-3)
-    let randomizador = Math.random() * 10
-    randomizador > 5 ? codigo = codigo : codigo = String(codigo) + 'S'
-    console.log(randomizador)
-
-    return codigo
-}
-
-function pressionarTecla(event) {
-
-    let tecla = event.key
-
-    if (tecla == 'y') {
-        window.alert("escolhido")
-        return 'y'
+function gerarStringTipo(tipo) {
+    if (tipo === undefined) {
+        return ''
     }
-    else if (tecla== 'n') {
-        window.alert("nao escolhido")
-        return 'n'
-    }
+
+    return tipo.toUpperCase()
 }
 
-export default function gerarPagina() {
-    let teste94 = new GerarPokemon('148', 'bulbao', 50, 0)
+function gerarCores(tipo) {
+    if (tipo === undefined) {
+        return '#FFFFFF'
+    }
 
-	paragrafodescricao.innerHTML = `${teste94.dadosPokemon.descricao}`
-    cabecalhointerno.innerHTML = `Lv${teste94.nivel} - ${teste94.dadosPokemon.especie}`
-    paragrafodados.innerHTML = 
-    `
-    Nº POKÉDEX: ${teste94.dadosPokemon.numeroPokedex}
-    NOME DO POKÉMON: ${teste94.nome}
-    ESPÉCIE: ${teste94.dadosPokemon.especie}
-    NATURE: ${teste94.nature}
-    `
-    paragrafostats.innerHTML = 
-    `
-    HP: ${teste94.stats[0]}
-    ATK: ${teste94.stats[1]}
-    DEF: ${teste94.stats[2]}
-    SATK: ${teste94.stats[3]}
-    SDEF: ${teste94.stats[4]}
-    SPD: ${teste94.stats[5]}
-    `
+    const tipos = ["Normal", "Lutador", "Voador", "Venenoso", "Terrestre", "Pedra", "Inseto", "Fantasma", 
+    "Aço", "Fogo", "Água", "Grama", "Elétrico", "Psiquico", "Gelo", "Dragão", "Noturno", "Fada"]
 
-    
-    let imagem = document.createElement('img')
-    imagem.style.width = '90%';
-    imagem.style.height = 'auto';
+    const coresTipos = ['#A8A878', '#C03028', '#A890F0', '#A040A0', '#E0C068', '#B8A038', '#A8B820', '#705898',
+    '#B8B8D0', '#F08030', '#6890F0', '#A1C9A8', '#FAE078', '#F85888', '#98D8D8', '#7038F8', '#705848', '#EE99AC']
 
-    imagem.setAttribute('src', `${teste94.sprite}`)
-    fotopokemoninterna.appendChild(imagem)
+    const indice = tipos.indexOf(tipo, 0)
+    return coresTipos[indice]
+}
+
+function paginaSobre(descricao) {
+    return `<div class='conteudomutavel'>
+        <div class='descricaopokedex'>
+            <p class='paragrafodescricao' id='paragrafodescricao'>${descricao}</p>
+        </div>
+        <div class='divtipos'></div>
+    </div>`
 }
