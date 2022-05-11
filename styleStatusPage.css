@@ -1,159 +1,205 @@
-html, body { height: 100%}
+html, body { height: 100% }
 
 body {
     display: flex;
     flex-direction: column;
-
-    background-color: #606878;
+    text-align: center;
+    background-color: #a6d0ed;
     height: 100%;
 }
 
-.cabecalho {
-    margin: auto;
-    background: #E0D898;
-    width: 80%;
-    height: 5%;
-
-    font-family: 'pokemon';
-    color: #F8F8F8;
-    text-shadow: 0.3vw 0.3vw #686868;
-    font-size: 2vw;
-    text-align: left;
+body:before {
+    opacity: 0.1;
 }
 
-.cabecalhointerno {
-    padding: 1vw;
-    font-family: 'pokemon';
-    color: #F8F8F8;
-    text-shadow: 0.3vw 0.3vw #686868;
-    font-size: 2vw;
-    text-align: left;
+.titulo {
+    color: #FFFFFF;
+    font-family: 'Gothic A1';
+    font-size: 70px;
+    margin: 50px;
+    margin-bottom: 70px;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .main {
     display: flex;
-    flex-direction: column;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     margin: auto;
-    width: 80%;
-    height: 80%;
+    
+    border-left: solid;
+    border-right: solid;
+    border-color: #FFFFFF;
+    border-width: 10px;
+
+    width: 100%;
+    height: 90%;
 }
 
-.secaoprimaria {
-    display: flex;
-    flex-direction: row;
-}
+.cabecalhointerno {
+    padding: 40px 40px 0px 40px;
+    color: #FFFFFF;
+    font-size: 100%;
+    text-align: left;
 
-.secaosecundaria {
-    display: flex;
-    flex-direction: row;
+    font-family: 'Gothic A1';
+    font-weight: 600;
 }
 
 .fotopokemon {
-    width: 60%;
-    height: auto;
-    background-color: #C8A8E8;
+    text-align: center;
+    width: 25rem;
+    height: 21.875rem;
+    margin: auto;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 1px 1px 1px 1px #808080;
 
-    border: solid #606878;
-    border-width: 0 0.7vw 0.7vw 0;
-    box-sizing: border-box;
+    background-image: url('pictures/pokeball.png');
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
-.fotopokemoninterna {
-    margin: 0.7vw;
-    border: solid #B088D0;
-    border-width: 0.4vw 0.4vw 0.4vw 0.4vw;
-    box-sizing: border-box;
-
-    background: repeating-linear-gradient(
-        180deg,
-        #F8F8F8,
-        #F8F8F8 1%,
-        #E8E8E8 1%,
-        #E8E8E8 3.5%
-    );
-}
-
-.descricaopokedex {
-    width: 40%;
-    height: auto;
-
-    background: repeating-linear-gradient(
-        180deg,
-        #F8A890,
-        #F8A890 1%,
-        #F8D0A8 1%,
-        #F8D0A8 2%
-    );
-
-    border: solid #F8E8D0;
-    border-width: 0.7vw 0.7vw 0 0.7vw;
-    box-sizing: border-box;
-}
-
-.statspokemon {
-    width: 60%;
-    height: auto;
-    background: repeating-linear-gradient(
-        180deg,
-        #F8A890,
-        #F8A890 1%,
-        #F8D0A8 1%,
-        #F8D0A8 2%
-    );
-
-    border: solid #F8E8D0;
-    border-width: 0.7vw 0 0.7vw 0.7vw;
-    box-sizing: border-box;
-}
-
-.dadospokemon {
-    width: 40%;
-    height: auto;
-
-    background: repeating-linear-gradient(
-        180deg,
-        #F8A890,
-        #F8A890 1%,
-        #F8D0A8 1%,
-        #F8D0A8 2%
-    );
-
-    border: solid #F8E8D0;
-    border-width: 0 0.7vw 0.7vw 0;
-    box-sizing: border-box;
+.conteudo {
+    width: 25rem;
+    height: 21.875rem;
+    margin: auto;
+    background: #FFFFFF;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 1px 1px 1px 1px #808080;
 }
 
 .paragrafodescricao{
-    padding: 2vw;
-
     text-align: justify;
-    font-family: 'pokemon';
-    color: #F8F8F8;
-    text-shadow: 0.3vw 0.3vw #686868;
-    font-size: 2vw;
+    color: #8F8F8F;
+    font-size: 80%;
+
+    font-family: 'Gothic A1';
+    font-weight: 600;
+}
+
+.paragrafotitulostats {
+    text-align: left;
 }
 
 .paragrafostats {
-    padding: 2vw;
     text-align: justify;
-    font-family: 'pokemon';
-    color: #F8F8F8;
-    text-shadow: 0.3vw 0.3vw #686868;
-    font-size: 2vw;
+    color: #606060;
+    font-size: 80%;
 }
 
 .paragrafodados {
-    padding: 2vw;
     text-align: justify;
-    font-family: 'pokemon';
-    color: #F8F8F8;
-    text-shadow: 0.3vw 0.3vw #686868;
-    font-size: 2vw;
+    color: #FFFFFF;
+    font-size: 80%;
 }
 
-@font-face {
-    font-family: 'pokemon';
-    src: url('font/Pokemon Classic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.botoesnavegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.botaonavegacao {
+    margin: 30px 0px 20px 0px;
+    border-radius: 8px;
+    border: none;
+    width: 80px;
+    height: 25px;
+    color: #A2A4A4;
+    background-color: #FFFFFF;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #A2A4A4;
+
+    font-family: 'Gothic A1';
+    font-weight: 600;
+}
+
+.divtipos {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 0px 40px 20px 40px;
+    gap: 20px;
+}
+
+.textotipos {
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    color: #FFFFFF;
+
+    font-family: 'Gothic A1';
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.conteudomutavel {
+    margin: 0px 40px 40px 40px;
+}
+
+.conteudostats {
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+}
+
+.statsname {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.progressbars {
+    display: flex;
+    flex-direction: column;
+}
+
+.paginaPokedex {
+    padding: 10px;
+    flex: none;
+}
+
+.botao {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer
+}
+
+.titulopokemon {
+    margin: 0;;
+    font-size: '20px'; 
+    opacity: 0.6;
+}
+
+.subtitulopokemon {
+    margin: 0;;
+    font-size: '30px';
 }
