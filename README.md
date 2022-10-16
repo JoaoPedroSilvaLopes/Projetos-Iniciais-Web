@@ -1,6 +1,6 @@
-# :pencil2: Projetos Iniciais JavaScript, HTML e CSS
+## :pencil2: Projetos Iniciais JavaScript, HTML e CSS
 
-## Sobre o projeto
+## :file_folder: Sobre o projeto
 <p align="justify">
   Esse repositório tem como finalidade agrupar projetos desenvolvidos em HTML, CSS e JavaScript que possuem como objetivo aplicar conhecimentos nas três tecnologias,     desde lidar com datas até formulários.
 </p>
