@@ -20,7 +20,7 @@ O projeto do contador envolve o usuário escolher um número inicial, um número
 ### Projeto 3D
 
 <p align="center">
-  <img width="500" height="300" src=".github/projeto3d.gif">
+  <img width="500" height="300" src=".github/projeto-3D.gif">
 </p>
 <p align="justify">
 Esse projeto busca simular um com HTML e CSS a visão isométrica muito utilizada em softwares de modelagem 3D para simular o efeito que o objeto em tera seja de fato  um mash em 3D.
@@ -29,7 +29,7 @@ Esse projeto busca simular um com HTML e CSS a visão isométrica muito utilizad
 ### Seletor de idade
 
 <p align="center">
-  <img width="500" height="300" src=".github/seletoridade.gif">
+  <img width="500" height="300" src=".github/seletor-idade.gif">
 </p>
 <p align="justify">
 Esse projeto busca lidar com datas e inputs em que o usuário possui uma interface que o mesmo escolhera o sexo e irá inserir o ano de nascimento e o script retornará uma foto escolhida de forma arbitrária e as cores da página baseado nos parâmtros que o usuário passou.
@@ -38,7 +38,7 @@ Esse projeto busca lidar com datas e inputs em que o usuário possui uma interfa
 ### Relogio do dia
 
 <p align="center">
-  <img width="500" height="300" src=".github/relogio.gif">
+  <img width="500" height="300" src=".github/relogio-do-dia.gif">
 </p>
 <p align="justify">
 Esse projeto busca lidar com datas de forma dinâmica em que utiliza o Date nativo do JavaScript para alterar a data em tempo real na tela de forma que caso seja um determinado horário a estilização da página irá alterar para o horário indicado.
