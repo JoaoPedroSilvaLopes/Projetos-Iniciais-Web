@@ -1,78 +1,77 @@
 body {
-    background-color: #5ed8f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: #5ed8f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-header, 
+header,
 footer,
 #resultado {
-    color: white;
-    text-align: center;
-    font: 1rem Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  color: white;
+  text-align: center;
+  font: 1rem Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #limite,
 #inicio,
 #incremento,
 .paragrafo {
-    color: #5ed8f7;
-    font: 1rem Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  color: #5ed8f7;
+  font: 1rem Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #limite,
 #inicio,
 #incremento {
-    border: solid 2px #5ed8f7;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
-    border-radius: 7px;
+  border: solid 2px #5ed8f7;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+  border-radius: 7px;
 }
 
 footer {
-
-    font-style: italic;
+  font-style: italic;
 }
 
 #botao_contar {
-    background-color: #5ed8f7;
-    width: 200px;
-    height: 50px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
-    border: none;
-    border-radius: 7px;
+  background-color: #5ed8f7;
+  width: 200px;
+  height: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+  border: none;
+  border-radius: 7px;
 
-    color: white;
-    font: 1rem Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  color: white;
+  font: 1rem Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #texto_resultado {
-    color: #5ed8f7;
-    margin-top: 20px;
+  color: #5ed8f7;
+  margin-top: 20px;
 }
 
 section {
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
 
 .paragrafo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
