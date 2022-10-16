@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escolha seu Pokémon!</title>
-    <link rel="stylesheet" href="styleStatusPage.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div>
-        <div class='titulo'>POKEDEX</div>
-        <div class='pagina'>
-            <button class='botao' onClick="handleLeftClick()">
-                <img src="../pictures/setaEsquerda.png" width='70%' height='auto' alt="Scroll Left"/>
-            </button>
-            <div id="main" class="main"> </div>
-            <button class='botao' onClick="handleRightClick()" onmouse>
-                <img src="../pictures/setaDireita.png" width='70%' height='auto' alt="Scroll Right"/>
-            </button>
-        </div>
+    <link rel="stylesheet" href="styleStatusPage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="titulo">POKEDEX</div>
+      <div class="pagina">
+        <button class="botao" onClick="handleLeftClick()">
+          <img
+            src="../pictures/setaEsquerda.png"
+            width="70%"
+            height="auto"
+            alt="Scroll Left"
+          />
+        </button>
+        <div id="main" class="main"></div>
+        <button class="botao" onClick="handleRightClick()" onmouse>
+          <img
+            src="../pictures/setaDireita.png"
+            width="70%"
+            height="auto"
+            alt="Scroll Right"
+          />
+        </button>
+      </div>
     </div>
     <script type="module">
-        import main from "../js/scriptStatusPage.js"
-        main()
+      import main from "../js/scriptStatusPage.js";
+      main();
     </script>
-</body>
+  </body>
 </html>
