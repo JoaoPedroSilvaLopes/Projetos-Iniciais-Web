@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header id="cabecalho"><h1>TABUADA</h1></header>
+      <section id="main">
+        <div id="entrada">
+          <p>NÚMERO:</p>
+          <input type="number" id="numero" />
+        </div>
+        <button id="botao_tabuada" onclick="gerar_tabuada()">
+          GERAR TABUADA
+        </button>
+        <div id="resultado">
+          <select name="tabuada" id="lista" size="10"></select>
+        </div>
+      </section>
+      <footer id="rodape"><p>&copy; João Pedro</p></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
