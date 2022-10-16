@@ -1,4 +1,4 @@
-## :pencil2: Projetos Iniciais JavaScript, HTML e CSS
+## :pencil2: Projetos Iniciais Web
 
 ## :file_folder: Sobre o projeto
 <p align="justify">
