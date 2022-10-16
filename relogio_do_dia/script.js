@@ -3,12 +3,9 @@ function carregar() {
     var mensagem = window.document.getElementById('msg')
     var imagem = window.document.getElementById('imagem')
     var data = new Date()
-    var hora = data.getHours()
-    var minutos = data.getMinutes()
-    var segundos = data.getSeconds()
-
-    var hora = 8
-    var hora = 15
+    var hora = data.getHours().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})
+    var minutos = data.getMinutes().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})
+    var segundos = data.getSeconds().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})
 
     mensagem.innerHTML = `AGORA SÃO ${hora}:${minutos}:${segundos} HORAS`
 
@@ -28,4 +25,6 @@ function carregar() {
         mensagem.style.color = '#1A315F'
     }
 }
+
+setInterval(carregar, 1000)
 

@@ -1,6 +1,17 @@
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #5ed8f7;
     font: normal 15pt Arial;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
