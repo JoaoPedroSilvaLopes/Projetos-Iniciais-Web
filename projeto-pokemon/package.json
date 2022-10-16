@@ -1,0 +1,12 @@
+{
+  "name": "dados-pokemon",
+  "version": "1.0.0",
+  "description": "dados do pokemon",
+  "main": "./js/gerarPokemon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Pedro Silva Lopes",
+  "license": "ISC",
+  "type": "module"
+}
