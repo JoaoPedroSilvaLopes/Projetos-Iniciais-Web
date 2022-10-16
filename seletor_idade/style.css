@@ -1,6 +1,17 @@
 body {
     background-color: #5ed8f7;
     font: normal 15pt Arial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 header {
@@ -31,7 +42,7 @@ img {
     margin: 20px;
 }
 
-input#botao {
+#botao {
     border: none;
     height: 50px;
     width: 150px;
@@ -39,12 +50,12 @@ input#botao {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
 
-div#resultado {
+#resultado {
     margin-top: 20px;
     align-content: center;
 }
 
-input#textoano {
+#textoano {
     border-radius: 5px;
     border-color: #A9A9A9;
 }
