@@ -21,14 +21,14 @@ function contar() {
 
     if (inicioC > limiteC) {
         for (;inicioC >= limiteC; inicioC -= incrementoC) {
-            texto = texto + `${inicioC} --> `
+            texto = texto + `${inicioC}    `
         }
-        texto_resultado.innerHTML = texto + 'fim'
+        texto_resultado.innerHTML = texto
     }
     else {
         for (;inicioC <= limiteC; inicioC += incrementoC) {
-            texto = texto + `${inicioC} --> `
+            texto = texto + `${inicioC}    `
         }
-        texto_resultado.innerHTML = texto + 'fim'
+        texto_resultado.innerHTML = texto
     }
 }

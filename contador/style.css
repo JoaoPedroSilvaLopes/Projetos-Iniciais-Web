@@ -1,11 +1,64 @@
 body {
     background-color: #5ed8f7;
-    font: normal 15pt Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header, 
+footer,
+#resultado {
     color: white;
     text-align: center;
+    font: 1rem Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#limite,
+#inicio,
+#incremento,
+.paragrafo {
+    color: #5ed8f7;
+    font: 1rem Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#limite,
+#inicio,
+#incremento {
+    border: solid 2px #5ed8f7;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+    border-radius: 7px;
+}
+
+footer {
+
+    font-style: italic;
+}
+
+#botao_contar {
+    background-color: #5ed8f7;
+    width: 200px;
+    height: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    border: none;
+    border-radius: 7px;
+
+    color: white;
+    font: 1rem Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#texto_resultado {
+    color: #5ed8f7;
+    margin-top: 20px;
 }
 
 section {
@@ -15,24 +68,6 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
-}
-
-footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-}
-
-button#botao_contar {
-    justify-content: center;
-    width: 150px;
-    height: 50px;
-    border-radius: 7px;
-}
-
-div#resultado {
-    margin-top: 20px;
-    text-align: center;
 }
 
 .paragrafo {

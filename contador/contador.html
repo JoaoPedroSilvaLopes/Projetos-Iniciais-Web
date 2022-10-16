@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titulo</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Contador</h1>
-    </header>
-    <section>
-        <div id="entradas">
-            <p class="paragrafo">Número inicial da contagem: <input type="number" id="inicio"></p>
-            <p class="paragrafo">Contar até: <input type="number" id="limite"></p>
-            <p class="paragrafo">Incremento da contagem: <input type="number" id="incremento"></p>
-        </div>
-        <div id="resultado">
-            <button id="botao_contar" onclick="contar()">Iniciar contagem</button>
-            <p class="paragrafo1"> Contagem:</p>
-            <p id="texto_resultado"></p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; João Pedro</p>
-    </footer>
+    <div id="main">
+        <header>
+            <h1>Contador</h1>
+        </header>
+        <section>
+            <div id="entradas">
+                <p class="paragrafo">Número inicial da contagem: <input type="number" id="inicio"></p>
+                <p class="paragrafo">Contar até: <input type="number" id="limite"></p>
+                <p class="paragrafo">Incremento da contagem: <input type="number" id="incremento"></p>
+            </div>
+            <div id="resultado">
+                <button id="botao_contar" onclick="contar()">Iniciar Contagem</button>
+                <p id="texto_resultado"></p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; João Pedro</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
