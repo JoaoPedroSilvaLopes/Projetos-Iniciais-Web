@@ -1,9 +1,8 @@
-h1 {
+h1, h2 {
+    font: normal 1rem;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    font-weight: bold;
 }
 
 body {
@@ -11,24 +10,29 @@ body {
     background-color: #d0eee4;
 }
 
-div#botao {
+#botao {
     text-align: center;
 }
 
-div#resultado {
+#resultado {
     text-align: center;
+    font: 1rem;
 }
 
 p {
-    font: normal 15pt Arial;
+    font: normal 1rem;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
 input {
+    font: normal 1rem;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
 }
 
 section {
+    height: 250px;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
