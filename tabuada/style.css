@@ -1,66 +1,98 @@
 body {
-    background-color: #5ed8f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #57636f;
     font: normal 15pt Arial;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 header {
-    color: white;
+    color: #0c1222;
     text-align: center;
 }
 
 section {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37404a;
     border-radius: 15px;
     padding: 15px;
     width: 500px;
     margin: auto;
+    height: 400px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
 
 footer {
-    color: white;
+    color: #0c1222;
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 
-div#entrada {
+#entrada {
+    width: 70%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    color: #0c1222;
+    font-weight: bold;
 }
 
-div#resultado {
-    margin-top: 30px;
+#entrada input {
+    border: none;
+    border-radius: 5px;
+    background-color: #57636f;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.219);
+
+    color: #0c1222;
+    font-weight: bold;
+}
+
+#resultado {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: #0c1222;
+    font-weight: bold;
 }
 
-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-button#botao_tabuada {
-    height: 50px;
+#botao_tabuada {
+    height: 45px;
     width: 150px;
-    border-color: #A9A9A9;
+    border: none;
+    border-radius: 7px;
+    background-color: #57636f;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    color: #0c1222;
+    font-weight: bold;
 }
 
 input {
     border-radius: 2px;
-    border-color: #A9A9A9;
+    border-color: none;
 }
 
-select#lista {
-    width: 200px;
-    border-radius: 2px;
-    border-color: #A9A9A9;
-    text-align: center;
+#lista {
+    height: auto;
+    width: 400px;
+    border-radius: 7px;
+    border: none;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.219);
+
+    background-color: #57636f;
 }

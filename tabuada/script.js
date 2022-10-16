@@ -13,11 +13,11 @@ function gerar_tabuada() {
         for (var contador = 1; contador <= 10; contador++) {
             var multiplicacao = contador * numero
             var tabuada = document.createElement('option');
-            tabuada.innerHTML = `${contador} X ${numero} = ${multiplicacao}`;
+            tabuada.innerHTML = `${contador} x ${numero} = ${multiplicacao}`;
             seletor.appendChild(tabuada);
         }
 
-        resultado.innerHTML = 'Tabuada gerada';
+        resultado.innerHTML = 'RESULTADO';
         resultado.appendChild(seletor);
     }
 }
