@@ -2,10 +2,11 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template-areas: 
+      "header"
+      "main"
+      "footer"
+  ;
 }
 
 h2 {
@@ -33,31 +34,32 @@ header {
 }
 
 .linkHeader {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .linkHeader:hover {
-  color: #80a949;
+  color: #80A949;
 }
 
 .botaoHeader {
-  background-color: #54842c;
-  border-top: 0.3rem #86c14f solid;
-  border-bottom: 0.3rem #3d6220 solid;
+  background-color: #54842C;
+  border-top: 0.3rem #86C14F solid;
+  border-bottom: 0.3rem #3D6220 solid;
   border-left: none;
   border-right: none;
+  box-sizing: border-box;
 
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
 
   box-shadow: 0rem 0.25rem 0rem 0rem rgba(00, 00, 00, 0.5);
 
   width: 11.5rem;
-  height: 2rem;
+  height: 2.5rem;
 
   display: flex;
   align-items: center;
@@ -67,7 +69,7 @@ header {
 .botaoHeader:hover {
   border: none;
   box-shadow: none;
-  background-color: #b9babe;
+  background-color: #B9BABE;
 }
 
 .logo {
@@ -80,10 +82,11 @@ main {
   grid-area: main;
   background-color: blue;
 
-  grid-template-areas:
-    "home"
-    "trailer"
-    "moreGames";
+  grid-template-areas: 
+      "home"
+      "trailer"
+      "moreGames"
+  ;
 }
 
 .home {
@@ -110,19 +113,20 @@ main {
 }
 
 .textoHome {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
 
 .botaoHome {
-  background-color: #54842c;
-  border-top: 0.25rem #86c14f solid;
-  border-bottom: 0.25rem #3d6220 solid;
+  background-color: #54842C;
+  border-top: 0.25rem #86C14F solid;
+  border-bottom: 0.25rem #3D6220 solid;
   border-left: none;
   border-right: none;
+  box-sizing: border-box;
 
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
 
@@ -139,7 +143,7 @@ main {
 .botaoHome:hover {
   border: none;
   box-shadow: none;
-  background-color: #2c2a29;
+  background-color: #2C2A29;
 }
 
 .linkHome {
@@ -147,7 +151,7 @@ main {
 }
 
 h1 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
 }
@@ -163,7 +167,7 @@ h1 {
 .games {
   margin: auto;
   margin-top: 3rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   height: 52rem;
   width: 70rem;
 
@@ -173,7 +177,7 @@ h1 {
 }
 
 .tituloGame {
-  color: #5b8343;
+  color: #5B8343;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
@@ -222,7 +226,7 @@ img {
 }
 
 .newsTitle {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -233,22 +237,22 @@ img {
 }
 
 .tituloNews {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
 
 .tituloNews:hover {
-  color: #80a949;
+  color: #80A949;
 }
 
 .newsImg {
   width: 20rem;
-  border: 0.15rem #ffffff solid;
+  border: 0.15rem #FFFFFF solid;
 }
 
 .newsImg:hover {
-  border: 0.15rem #80a949 solid;
+  border: 0.15rem #80A949 solid;
 }
 
 .trailer {
@@ -281,25 +285,61 @@ img {
 }
 
 footer {
-  height: 38rem;
+  height: 48rem;
   grid-area: footer;
   background-image: url(pictures/backgroundB.png);
 }
 
-.linkSocialMedia {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  display: block;
+.linkYoutube, .linkInstagram, .linkFacebook, .linkTwitter, .linkReddit {
+  background-size: 5rem 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5rem;
+  height: 5rem;
 }
 
-.imgLinks {
-  width: 5rem;
+.linkYoutube {
+  background-image: url(pictures/youtubeB.png);
+}
+
+.linkYoutube:hover {
+  background-image: url(pictures/youtube.png);
+}
+
+.linkInstagram {
+  background-image: url(pictures/instagramB.png);
+}
+
+.linkInstagram:hover {
+  background-image: url(pictures/instagram.png);
+}
+
+.linkFacebook {
+  background-image: url(pictures/facebookB.png);
+}
+
+.linkFacebook:hover {
+  background-image: url(pictures/facebook.png);
+}
+
+.linkTwitter {
+  background-image: url(pictures/twitterB.png);
+}
+
+.linkTwitter:hover {
+  background-image: url(pictures/twitter.png);
+}
+
+.linkReddit {
+  background-image: url(pictures/redditB.png);
+}
+
+.linkReddit:hover {
+  background-image: url(pictures/reddit.png);
 }
 
 .descricaoLinks {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
 }
