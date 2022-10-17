@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEC - solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SOLVER CIRCUITOS EM SÉRIE E PARALELO</h1>
+    </header>
+    <main>
+        <div class="secao">
+            <div id="dados">
+                <p>ACHE RESISTENCIA</p>
+                <input type="text" id="tensaoR" placeholder="Insira Tensão"> 
+                <input type="text" id="correnteR" placeholder="Insira Corrente">
+            </div>
+            <button type="button" onclick="acharResistencia()">
+                RESOLVER
+            </button>
+        </div>
+        <div class="secao">
+            <div id="dados">
+                <p>ACHE A TENSAO</p>
+                <input type="text" id="correnteT" placeholder="Insira Corrente">
+                <input type="text" id="resistenciaT" placeholder="Insira Resistencia(as)">
+            </div>
+            <button type="button" onclick="acharTensao(1) ">
+                RESOLVER EM SÉRIE
+            </button>
+            <button type="button" onclick="acharTensao(2)">
+                RESOLVER EM PARALELO
+            </button>
+        </div>
+        <div class="secao">
+            <div id="dados">
+                <P>ACHE A CORRENTE</P>
+                <input type="text" id="tensaoC" placeholder="Insira Tensão"> 
+                <input type="text" id="resistenciaC" placeholder="Insira Resistencia(as)">
+            </div>
+            <button type="button" onclick="acharCorrente(1)">
+                RESOLVER EM SÉRIE
+            </button>
+            <button type="button" onclick="acharCorrente(2)">
+                RESOLVER EM PARALELO
+            </button>
+        </div>
+    </main>
+    <div>
+    </div>
+    <div id="resposta">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

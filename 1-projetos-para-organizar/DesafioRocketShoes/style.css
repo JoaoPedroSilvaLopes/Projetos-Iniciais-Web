@@ -1,0 +1,159 @@
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "main" "main"
+        "footer" "footer"
+    ;
+
+    --background: #E5E5E5;
+}
+
+.cabecalho {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 1rem 0rem;
+
+    font: 1.5rem 'Roboto', sans-serif;
+    font-weight: 700;
+
+    grid-area: header;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+input {
+    width: 13.75rem;
+    height: 2.813rem;
+    border: none;
+}
+
+input::placeholder {
+    font: 1.125rem 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    height: 57.125rem;
+    grid-area: main;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.aside {
+    width: 37.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricaoProduto {
+    width: 22.313rem;
+    height: 33.313rem;
+}
+
+h1 {
+    font: 3.75rem 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.descricao {
+    margin: 1rem 0rem;
+    font: 1rem 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--text-description);
+}
+
+.preco {
+    margin: 2rem 0rem 1.5rem;
+    font: 2.5rem 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.botaoPreco {
+    width: 17.125rem;
+    height: 5.625rem;
+    background-color: var(--button);
+    border: none;
+
+    color: #FFF;
+    font: 1.5rem 2.5rem 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.submain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 62.5%;
+    background-color: var(--main-background);
+}
+
+.destaque {
+    display: flex;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0rem 3rem;
+    gap: 5rem;
+}
+
+.imagemAmpliada {
+    margin-top: 2rem;
+    width: 40rem;
+}
+
+footer {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10.375rem;
+    grid-area: footer;
+
+    font: 1.125rem 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.exploreMais {
+    width: 27.313rem;
+    height: 10.375rem;
+
+    background-color: #000;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    font: 1.5rem;
+}

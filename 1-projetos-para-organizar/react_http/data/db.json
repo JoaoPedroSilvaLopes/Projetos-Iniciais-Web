@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "teste",
+      "price": "123",
+      "id": 4
+    },
+    {
+      "name": "teste",
+      "price": "123",
+      "id": 5
+    },
+    {
+      "name": "teclado",
+      "price": "120",
+      "id": 6
+    },
+    {
+      "name": "uga",
+      "price": "12",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "price": "50",
+      "id": 8
+    },
+    {
+      "name": "uga",
+      "price": "50",
+      "id": 9
+    },
+    {
+      "name": "uga1",
+      "price": "35",
+      "id": 10
+    }
+  ]
+}
